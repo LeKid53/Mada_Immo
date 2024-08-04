@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
+
+/* Toutes les couleurs du projets */
+
+:root {
+  --primaryColor: hsla(212, 94%, 50%, 0.938);
+  --primaryColorLight: hsla(211, 68%, 73%, 0.938);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 5%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  
+
+  /* Fond d'autre */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallesFontSize: 0.75rem;
+  --borderRaduis: 3rem;
+}
+
+.subscribe{
+    .secContainer{
+        .textDiv{
+            h4{
+                font-size: var(--h2FontSize);
+                color: var(--blackColor);
+            }
+
+            p{
+                padding: 1rem 0;
+            }
+
+            .btn{
+                padding: .5rem 2rem;
+            }
+        }
+    }
+}

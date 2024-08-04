@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
+
+
+/* Toutes les couleurs du projets */
+
+:root {
+  --primaryColor: hsla(212, 94%, 50%, 0.938);
+  --primaryColorLight: hsla(211, 71%, 50%, 0.938);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 5%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  
+
+  /* Fond d'autre */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallesFontSize: 0.75rem;
+  --borderRaduis: 3rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    position: fixed;
+    border-bottom: 1.5px solid rgba(221, 217, 217, 0.945);
+    /*background: #f8f1f1dc;*/
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+
+    .header_left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            color: var(--blackColor);
+            font-size: var(--h3FontSize);
+            justify-content: center;
+        }
+
+        /*.logo{
+            width: 15%;
+            height: 15%;
+        }*/
+    }
+
+    @media screen and (max-width: 767px) {
+        .header_center{
+            position: absolute;
+            width: 70%;
+            top: -100rem;
+            right: 50%;
+            left: 50%;
+            transform: translate(-50%);
+            background: rgba(255, 255, 255, 0.94);
+            padding: 2rem;
+            border-radius: 10px;
+            transition: .8s ease-in-out;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 2px 3px 4px rgba(236, 213, 213, 0.516);
+
+        }
+
+        li{
+            font-size: var(--h3FontSize);
+            font-weight: 500;
+            padding: 1rem 0;
+            text-align: center;
+            cursor: pointer;
+            &:hover{
+                color: var(--primaryColor);
+                border-bottom: 1.5px solid var(--primaryColor);
+            }
+        }
+    }
+
+    .closeIcon, .menuIcon{
+         font-size: var(--h1FontSize);
+         &:hover{
+            color: var(--primaryColor);
+         }
+    }
+
+    .closeIcon{
+        position: absolute;
+        bottom: -15px;
+        right: 50%;
+        left: 50%;
+        color: var(--blackColor);
+        transform: translate(-50%);
+    }
+
+    .showheader{
+        top: 8rem;
+    }
+}
+
+
